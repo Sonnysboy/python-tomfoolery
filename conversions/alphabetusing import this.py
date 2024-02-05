@@ -1,0 +1,1 @@
+alphabet = dict(zip(list(map(str.lower, [*__import__('this').__dict__['d'].keys()])), [*range(1,27)]))
