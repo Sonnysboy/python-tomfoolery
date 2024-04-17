@@ -21,7 +21,7 @@ conversions = {
 't' : 'type(str(), (), {}).__bases__[0].__name__[-1]',
 'u' : '(None,).__class__.__name__[1]',
 'v' : 'property.__doc__[77]', # this one was easier than i thought it'd be'
-'w' : 'w', # memoryview DOES NOT WORK ON CODEWARS
+'w' : '\'w\'', # memoryview DOES NOT WORK ON CODEWARS
 'x' : 'list(zip(enumerate(type(().__class__.__subclasses__()).__dict__)))[28][0][1][1] ',# it happened again
 'y' : 'dict.__doc__[18]',
 'z' : 'list(zip(enumerate(str.__dict__)))[63][0][1][0]',
@@ -36,5 +36,5 @@ def ruincode(code):
 exec(f"{translate(code.replace('"', "'"))}")
 '''
 print(ruincode("""
-print('monkey')
+print('the quick brown fox jumps over the lazy dog')
 """))
